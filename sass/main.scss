@@ -1,0 +1,88 @@
+// Put any @imports here
+// See Readme for a list of supported ones
+@import 'font-awesome';
+@import 'foundation';
+body {
+  background: #FFF;
+}
+
+
+h1{
+  height: 150px;
+  margin-top: 0;
+  .gradient{
+    height: 153px;
+    width: 100%;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 60%,rgba(255,255,255,0.63) 85%,rgba(255,255,255,1) 100%);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+  }
+  .logo{
+    height: 150px;
+    width: 100%;
+    background-image: url('http://static.tumblr.com/ridge7y/VZAm3ll9i/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: white;
+    position: fixed;
+    z-index: 9;
+  }
+}
+
+
+.homeContainer{
+  h3{
+    text-align: center;
+  }
+  .gradient2{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    top: 150px;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.06) 15%,rgba(255,255,255,0) 16%);
+  }
+  .oneDirectionMembers{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Permanent Marker', cursive;
+    img{
+      width: 300px;
+      height: 300px;
+      transition: all 1s ease;
+      border-radius: 10px;
+    }
+    img:hover{
+      box-shadow: 1px 1px 8px #E277FB;
+      width: 310px;
+      height: 310px;
+    }
+  } 
+}
+
+
+  .audio {
+    background-color: #008cba;
+    padding: 15px 10px 10px 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+  span {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 6px;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
+
+form{
+  width: 50%;
+  margin: 0 25%;
+}

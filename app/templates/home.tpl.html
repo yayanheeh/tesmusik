@@ -1,0 +1,45 @@
+ <div class="homeContainer">
+ <div class="gradient2"></div>
+    <ul class="oneDirectionMembers small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+      <li>
+        Harry Styles
+        <img src="http://ak-hdl.buzzfed.com/static/enhanced/webdr01/2013/2/1/15/anigif_enhanced-buzz-9565-1359749139-2.gif">
+      </li>
+      <li>
+        Louis Tomlinson
+         <img src="http://ak-hdl.buzzfed.com/static/2014-12/23/17/enhanced/webdr10/anigif_enhanced-buzz-9895-1419372221-29.gif">
+      </li>
+      <li>
+        Niall Horan
+        <img src="http://content.j-14.com/i/upload/2013/05/niall-horan-dancing-8.gif">
+      </li>
+      <li>
+        Liam Payne
+        <img src="http://media.tumblr.com/7bc8ae17cbae326bcf63a50eaf1ea235/tumblr_inline_n3tg9xw5mf1srvga4.gif">
+      </li>
+    </ul>
+
+    <h3>Music powered by SoundCloud</h3>
+
+<form ng-submit="search(query)">
+  <input placeholder="Search For Music" ng-model="query">
+  <button>Search</button>
+</form>
+
+<hr>
+
+<ul class="small-block-grid-3">
+  <li class="track" ng-repeat="song in songs" ng-click="playMe(song)">
+    <img ng-if="song.artwork_url" ng-src="{{ song.artwork_url }}">
+    <img ng-if="!song.artwork_url" src="http://placehold.it/100x100">
+    <p class="trackInfo">{{ song.title }}</p>
+  </li>
+</ul>
+
+
+<div class="audio" ng-show="audio">
+  <audio controls="controls" src="{{ audio }}" autoplay></audio>
+  <span>Playing: {{ playing.title }}</span>
+</div>
+</div>
+  </div>
