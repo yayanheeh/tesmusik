@@ -31,7 +31,7 @@ Object.defineProperty(exports, '__esModule', {
 });
 var HomeController = function HomeController($scope, SC, $http, $sce) {
 
-  var url = 'http://api.soundcloud.com/tracks?client_id=' + SC;
+  var url = 'https://api.soundcloud.com/tracks?client_id=' + SC;
 
   $scope.search = function (query) {
     query = encodeURI(query);
