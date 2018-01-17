@@ -1,6 +1,6 @@
 let HomeController = function($scope, SC, $http, $sce) {
   
-  let url = 'http://api.soundcloud.com/tracks?client_id=' + SC;
+  let url = 'https://api.soundcloud.com/tracks?client_id=' + SC;
 
   $scope.search = (query) => { 
     query = encodeURI(query);
