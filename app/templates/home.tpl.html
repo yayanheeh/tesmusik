@@ -43,9 +43,10 @@
 </ul>
 
 
-<div class="audio" ng-show="audio">
+<div class="audio" ng-show="audio"><br/>
+   <span>Playing: {{ playing.title }}</span>
   <audio controls="controls" src="{{ audio }}" autoplay></audio>
-  <span>Playing: {{ playing.title }}</span>
+ 
 </div>
 </div>
   </div>
